@@ -1,0 +1,32 @@
+.listPokemon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-height: 530px;
+    max-width: 300px;
+    padding: 10px 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 3px solid #000000;
+    background-color: #e7e7e7;
+}
+
+.listPokemon::-webkit-scrollbar {
+    width: 10px;
+    background-color: #c2c2c2;
+}
+
+.listPokemon::-webkit-scrollbar-thumb {
+    background: var(--pokedex-claro);
+}
+
+.listPokemon::-webkit-scrollbar-thumb:hover {
+    background: var(--pokedex-medio);
+}
+
+@media(max-width:767px){
+ .listPokemon{
+     height: 300px;
+ }
+}

@@ -1,0 +1,16 @@
+.pokedex{
+    display: flex;
+    padding: 20px;
+    background: var(--pokedex-claro);
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    border-image-source: linear-gradient(to bottom, var(--pokedex-medio), var(--pokedex-escuro));
+    box-shadow: 0px 0px 10px 5px #000000;
+}
+
+@media(max-width:767px){
+.pokedex{
+    flex-direction: column;
+}
+}

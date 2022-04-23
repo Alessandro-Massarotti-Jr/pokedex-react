@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap');
+
+:root{
+--pokedex-claro:#f8343a;
+--pokedex-medio:#fa0407;
+--pokedex-escuro:#ab1319;
+--type-grass:#00ff0d;
+--type-fire:#ff7300;
+--type-water:#008cff;
+--type-poison:#bd15af;
+--type-bug:#d0ff00;
+--type-flying:#bffff4;
+--type-normal:#bdbdbd;
+--type-electric:#f1e100;
+--type-ground:#9e5502;
+--type-ghost:#8400ff;
+--type-psychic:#ff009d;
+--type-fighting:#d40000;
+--type-dragon:#4c00ff;
+--type-ice:#e0f6ff;
+--type-fairy:#ff9def;
+--type-rock:#c2a27d;
+--type-steel:#dddddd;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Akshar', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c2c2c2;
 }

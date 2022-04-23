@@ -1,0 +1,150 @@
+.loading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    cursor:normal;
+    width: 300px;
+    margin-left: 30px;
+}
+
+.pokemon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    cursor:pointer;
+    width: 300px;
+    margin-left: 10px;
+}
+.icone{
+    width: 70px;
+    height: 70px;
+    margin-right: -40px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.icone img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nome{
+    font-size: 16px;
+    font-weight: 400;
+    height: 70px;
+    width: 180px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f2f2f2;
+    border: 2px solid #000000;
+    transition: 0.5s ease-in-out;
+}
+
+.circle{
+    content: '';
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: relative;
+    left: -70px;
+    margin-right: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.circle img{
+    max-width: 100%;
+    max-height:100%;
+    object-fit: contain;
+}
+
+.pokemon:hover .nome{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid var(--pokedex-medio);
+}
+
+.pokemon:hover .icone{
+    margin-right: 10px;
+    box-shadow: 0px 0px 5px 2px #000000;
+    background-color: #ffffff;
+}
+
+.pokemon:hover .circle{
+  width: 60px;
+  height: 60px;
+  left: -60px;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.loading .nome .circle{
+    width: 60px;
+    height: 60px;
+    left: -60px;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.pokemon.active .nome{
+background-color: var(--pokedex-medio);
+border: 2px solid #000000;
+color: #ffffff;
+}
+
+.pokemon.active .circle{
+    animation-name: unset;
+}
+
+.pokemon.active .icone{
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 5px 2px #000000;
+}
+
+.pokemon.active:hover .nome{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 2px solid #000000;
+}
+
+.pokemon.active:hover .icone{
+    margin-right: -40px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 5px 2px #000000;
+}
+
+
+.pokemon.active:hover .circle{
+  width: 70px;
+  height: 70px;
+  left: -70px;
+}
+
+@keyframes loading{
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
