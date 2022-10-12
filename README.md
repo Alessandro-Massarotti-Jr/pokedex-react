@@ -17,7 +17,7 @@ Projeto desenvolvido em react consumindo a pokeAPI para adicionar conteudo ao si
  - Run `npm start` to start development server
  - Run `npm run buld` to make production version of this project
 
-## Tecnologies
+## Links Uteis
 
  - [React](https://reactjs.org/)
  - [Css](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
